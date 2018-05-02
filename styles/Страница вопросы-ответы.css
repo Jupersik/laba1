@@ -1,7 +1,7 @@
 @import url("../styles/style.css");
-@import url("../styles/style-desktop2.css");
-@import url("../styles/style-tablet2.css");
-@import url("../styles/style-mobile2.css");
+@import url("../styles/style-desktop2.css") (min-width: 1024px);
+@import url("../styles/style-tablet2.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile2.css") (max-width: 768px);
 
 
 
@@ -9,7 +9,6 @@
   display: flex;
   margin: 1%;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 
@@ -25,7 +24,7 @@
   color: black;
   background-color: rgb(205, 104, 137);
   text-align: center;
-  justify-content: center;
+  justify-content:center;
 }
 
 
@@ -41,7 +40,5 @@
 
   grid-row-gap: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
-
-                  
+  padding-bottom: 20px;              
 } 

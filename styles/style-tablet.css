@@ -1,5 +1,4 @@
-@media  (min-width: 768px)  {
-  .grid-container { 
+ .grid-container { 
   grid-template-columns: 100%; 
   grid-template-rows: 10% 10% 158% 158% 25%; 
   grid-template-areas: "header" 
@@ -13,22 +12,6 @@
                   
   } 
 
-} 
 
 
-@media screen and (min-device-width: 768px)  {
-  .grid-container { 
-  grid-template-columns: 100%; 
-  grid-template-rows: 10% 10% 158% 158% 25%; 
-  grid-template-areas: "header" 
-                       "banner" 
-                       "banner1"
-                       "content"
-                       "footer"; 
-  grid-row-gap: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-                  
-  } 
 
-} 

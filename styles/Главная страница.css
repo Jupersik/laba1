@@ -1,7 +1,7 @@
 @import url("../styles/style.css");
-@import url("../styles/style-desktop.css");
-@import url("../styles/style-tablet.css");
-@import url("../styles/style-mobile.css");
+@import url("../styles/style-desktop.css")(min-width: 1024px);
+@import url("../styles/style-tablet.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile.css") (max-width: 768px);
 
 .flex-container1 {
   display: flex;
