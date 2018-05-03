@@ -1,0 +1,117 @@
+@import url("../styles/style.css");
+@import url("../styles/style-desktop.css")(min-width: 1024px);
+@import url("../styles/style-tablet.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile.css") (max-width: 768px);
+
+.flex-container1 {
+  display: flex;
+  margin: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex-container2 {
+  display:flex;
+  margin: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+
+.Banner4{
+  margin: 0.5em;
+  padding: 0.7em;
+  width: auto;
+  height: auto;
+  color: red;
+  background-color: rgb(205, 104, 137);
+}
+
+.Banner5{
+  margin: 1%;
+  padding: 0.7em; 
+  width: auto;
+  height: 60px;
+  color: white;
+  align-items: center;
+  background-color: rgb(205, 104, 137);
+}
+
+
+.Content6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+  margin: 0.5em;
+  padding: 0.7em;
+  width: auto;
+  height: auto;
+  color: black;
+  background-color: rgb(205, 104, 137);
+  text-align: center;
+}
+
+.Banner8{
+  margin: 0.5em;
+  padding: 0.7em;
+  width: auto;
+  height: auto;
+  color: rgb(255, 255, 255);
+  background-color: rgb(205, 104, 137);
+}
+
+.Content9{
+
+  text-align:center;
+
+}
+
+
+.Content11{
+
+  width:220px;
+  height:195px;
+
+}
+
+.grid-container { 
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 10% 35% 158% 25%; 
+  grid-template-areas: "header" 
+                       "banner" 
+                       "banner1"
+                       "content"
+                       "footer"; 
+   grid-row-gap: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;              
+} 
+
+
+ 
+
+.banner { 
+  grid-area: banner; 
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0.88;
+  filter: alpha(Opacity=88); 
+} 
+
+
+.banner1 { 
+  grid-area: banner1; 
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0.88;
+  filter: alpha(Opacity=88); 
+}
+

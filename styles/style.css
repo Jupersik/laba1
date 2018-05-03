@@ -1,14 +1,15 @@
 .grid-container { 
   display: grid; 
-  background-image:url(../assets/фон.jpg);
+  background-image:url(../assets/background.jpg);
   font-family:"COMIC SANS MS"; 
   font-size: 18px;
 } 
 
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
   flex-wrap: wrap;
+
 }
 
 .flex-container4 {
@@ -18,13 +19,31 @@
   flex-wrap: wrap;
 }
 
+.flex-container5 {
+  display: flex;
+  justify-content: flex-start;
+ flex-direction: row;
+ width: 70%;
 
-.container1 {
+}
+
+
+.flex-container6 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+
+
+
+.Header1 {
   padding: 0.5em; 
 }
 
 
-.container2 {
+.Header2{
   border: 1.5px solid gray;
   margin: 15px;
   padding: 0.5em; 
@@ -39,7 +58,7 @@
 
 
 
-.container3 {
+.Header3 {
   display: flex;
   border: 1.5px solid black;
   border-radius: 100px;
@@ -47,10 +66,11 @@
   padding: 0.3em; 
   align-items: center;
   text-align: center;
+ 
 }
 
 
-.container7{
+.Footer7{
   display: flex;
   flex-basis: 45%;
   flex-direction: column;
@@ -65,13 +85,13 @@
   text-align: center; 
 }
 
-.container10{
+.Footer10{
 
   color:black;
 
 }
 
-.container12
+.Header12
 {
   width:50px;
   height:45px;

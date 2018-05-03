@@ -1,0 +1,79 @@
+@import url("../styles/style.css");
+@import url("../styles/style-desktop4.css") (min-width: 1024px);
+@import url("../styles/style-tablet4.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile4.css") (max-width: 768px);
+
+
+ .flex-container3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+    
+  
+    
+.Content6 {
+  display: flex;
+  align-items: center;
+  flex-basis: 45%;
+  margin: 0.5em;
+  padding: 0.7em;
+  width: auto;
+  height: auto;
+  color: black;
+  background-color: rgb(205, 104, 137);
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.Content6 img{
+
+  padding: 1%;
+
+}
+    
+
+        
+.Content8{
+  display: flex; 
+  border: 1.5px solid black;
+  margin: 0.5em;
+  padding: 0.7em; 
+  width: auto;
+  height:auto;
+  color:black;
+  background-color: white;
+  flex-basis: 45%;
+  flex-wrap: wrap;
+
+
+}
+    
+.Content9{
+
+  text-align: center;
+
+}
+
+.Content11{
+
+ width: 220px;
+ height: 230px;
+
+}
+    
+    
+.grid-container { 
+      grid-template-columns: 100%; 
+      grid-template-rows: 10% 70% 25%; 
+      grid-template-areas: "header" 
+                           "content"
+                           "footer"; 
+    
+      grid-row-gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+} 
