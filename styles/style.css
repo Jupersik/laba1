@@ -3,6 +3,10 @@
   background-image:url(../assets/Background.jpg);
   font-family:"COMIC SANS MS"; 
   font-size: 18px;
+
+   grid-row-gap: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 } 
 
 .flex-container {
@@ -124,3 +128,5 @@
 
   .color1 { 
   background-color:rgb(205, 150,205)
+
+
