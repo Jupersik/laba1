@@ -1,6 +1,6 @@
 .grid-container { 
   display: grid; 
-  background-image:url(../assets/background.jpg);
+  background-image:url(../assets/Background.jpg);
   font-family:"COMIC SANS MS"; 
   font-size: 18px;
 } 
