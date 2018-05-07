@@ -4,9 +4,9 @@
   font-family:"COMIC SANS MS"; 
   font-size: 18px;
 
-   grid-row-gap: 20px;
-   padding-top: 20px;
-   padding-bottom: 20px;
+  grid-row-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 } 
 
 .flex-container {
@@ -15,6 +15,14 @@
   flex-wrap: wrap;
 
 }
+
+.flex-container1 {
+  display: flex;
+  margin: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 
 .flex-container4 {
   display: flex;
@@ -73,6 +81,16 @@
  
 }
 
+.Banner4{
+  margin: 0.5em;
+  padding: 0.7em;
+  width: auto;
+  height: auto;
+  color: red;
+  background-color: rgb(205, 104, 137);
+}
+
+
 
 .Footer7{
   display: flex;
@@ -101,6 +119,8 @@
   height:45px;
 }
 
+
+
 .header { 
   grid-area: header;
   width: 85%;
@@ -109,6 +129,15 @@
   opacity: 0.88;
   filter: alpha(Opacity=88); 
 } 
+
+.banner { 
+  grid-area: banner; 
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0.88;
+  filter: alpha(Opacity=88); 
+} 
+
 
 .content{ 
   grid-area: content; 
@@ -126,7 +155,8 @@
   filter: alpha(Opacity=88); 
 } 
 
+
+
   .color1 { 
   background-color:rgb(205, 150,205)
-
-
+}

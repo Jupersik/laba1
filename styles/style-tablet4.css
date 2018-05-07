@@ -1,10 +1,9 @@
   .grid-container { 
   grid-template-columns: 100%; 
-  grid-template-rows: 10% 70% 25%; 
+  grid-template-rows: 10% 10% 70% 25%; 
   grid-template-areas: "header" 
+                       "banner"
                        "content"
                        "footer"; 
 
-  }              
-
-
+  } 
