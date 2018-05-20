@@ -20,11 +20,12 @@
   margin: 0.5em;
   padding: 0.7em;
   width: 10em;
-  height: 18em;
+  height: 19em;
   color: black;
   background-color: rgb(205, 104, 137);
   text-align: center;
   justify-content:center;
+  word-wrap: normal;
 }
 
 
