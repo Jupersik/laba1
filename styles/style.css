@@ -79,6 +79,7 @@
   padding: 0.3em; 
   align-items: center;
   text-align: center;
+  background-color: white;
  
 }
 
@@ -99,18 +100,19 @@
   flex-direction: column;
   margin: 0.5em;
   padding: 0.7em; 
-  color:red;
+  color:#9400D3;
   background-color: rgb(205, 104, 137);
   width: auto;
   height:auto;
   align-items: center;
   justify-content: center;
   text-align: center; 
-}
+ }
 
 .Footer10{
 
   color:black;
+  
 
 }
 
@@ -146,6 +148,9 @@
   margin: 0 auto;
   opacity: 0.88;
   filter: alpha(Opacity=88); 
+
+
+
 } 
     
 .footer { 
@@ -161,3 +166,113 @@
   .color1 { 
   background-color:rgb(205, 150,205)
 }
+
+.article-picture
+{
+  margin: 0 10px;
+}
+
+nav ul {
+         margin: 0;
+         padding:0;
+         list-style: none;
+         position: relative;
+
+       
+          }
+
+      
+      nav ul li {
+
+          display:inline-block;
+          background-color:#800080;
+          border: 1px solid black;
+           
+  
+          }
+      
+    
+      nav a {
+          display:block;
+          padding:0 10px;
+          color:#FFF;
+          text-decoration:none;
+   
+      }
+      
+      
+      nav a:hover {
+          background-color: #DA70D6;
+
+    }
+
+
+
+ 
+
+
+       nav ul ul {
+          display: none;
+          position: relative;
+          top: 100%;
+       
+       
+      }
+      
+     
+     nav ul li:hover > ul {
+          display:inherit;
+
+      }
+      
+    
+       nav ul ul li {
+          min-width:140px;
+          float:none;
+          display:list-item;
+          position: relative;
+
+      }
+
+
+  nav ul ul ul {
+          position: absolute;
+          top:0;
+          left:100%;
+          
+    }
+
+  
+   .photo {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+   }
+   .photo:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+   }
+
+
+
+   .photo1 {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+   }
+   .photo1:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(205,104,137,0.9); /* Полупрозрачный цвет фона */
+     font-family:"COMIC SANS MS";  /* Гарнитура шрифта */
+    font-size: 18px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+   }

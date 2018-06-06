@@ -60,12 +60,26 @@
 
 .Content11{
 
- width: 220px;
- height: 230px;
+ width: 270px;
+ height: 270px;
+ margin-right:10px; 
+ margin-top:10px;
+ margin-left:10px;
+ margin-bottom: 10px;
 
 }
     
     
+    .Content12{
+
+ width: 270px;
+ height: 270px;
+ margin-right:10px; 
+ margin-top:30px;
+ margin-left:10px;
+ margin-bottom: 10px;
+
+}
 .grid-container { 
       grid-template-columns: 100%; 
       grid-template-rows: 10% 10% 70% 25%; 
@@ -74,4 +88,34 @@
                            "content"
                            "footer"; 
     
+}
+
+
+.comment {
+  display: flex;
+}
+.comment input {
+  width: 100%;
+  border-radius: 0px;
+  border: 2px solid #000000;
+  outline: none;
+  transition: none;
+  margin: 1% 0%;
+}
+.comment button {
+  position: relative;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 1% 0%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.comment1 {
+  border: 2px solid rgb(169, 169, 169);
+  width:100%;
+  margin-top: 1em;
+
 }

@@ -1,0 +1,29 @@
+
+
+@import url("../styles/style.css");
+@import url("../styles/style-desktop.css")(min-width: 1024px);
+@import url("../styles/style-tablet.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile.css") (max-width: 768px);
+
+.vhod1{
+	
+
+	  display: flex;
+
+  align-items: center;
+width: 50%;
+  margin: 0.5em;
+  padding: 0.7em;
+ 
+  color: black;
+  background-color: rgb(205, 104, 137);
+  text-align: center;
+
+}
+
+.flex-container15{
+
+	 display: flex;
+  margin: 1%;
+  flex-direction: column;
+}

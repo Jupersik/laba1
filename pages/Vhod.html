@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
-
-<html>  
+ 
+<html> 
 
 <head> 
 <title>BeautyHome</title> 
@@ -9,16 +9,31 @@
 <meta name="author" content="Novoselova Julia"> 
 <meta name="keywords" content="BeautyHome"> 
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="../styles/Question-answers.css">
+<link rel="stylesheet" href="../styles/Vhod.css">
 <link rel="shortcut icon" href="../assets/Beauty.jpg" type="image/jpg">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+<script language = "JavaScript">
+var bigsize = "250"; //Размер большой картинки
+var smallsize = "195"; //Размер маленькой картинки
+function changeSizeImage(im) {
+  if(im.height == bigsize) im.height = smallsize;
+  else im.height = bigsize;
+}
+</script>
+
+
+
+
+
 </head> 
 
-<body class="grid-container">
+<body class="grid-container"> 
 
-
-  <div class="grid-item color1 header">
-
-      <div class="flex-container">
+    <div class="grid-item color1 header">
+       <div class="flex-container">
 
        	<div class="flex-container5">
 
@@ -27,20 +42,21 @@
 
 	   </div>
 
-	<div class="flex-container6">
+	  <div class="flex-container6">
 
     <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img src="../assets/Vhod.png" width="35" height="35" alt=""></a></div></div> 
     <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="../assets/Heart.jpg" width="35" height="35"></a></div></div> 
     <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="../assets/Basket.jpg" width="35" height="35"></a></div></div> 
 
     </div>
+   
 
-    </div> 
+       </div> 
 
-  </div>
-
-          
-       <div class="grid-item color1 banner">
+    </div>
+    
+    
+    <div class="grid-item color1 banner">
 
 
        <div class="flex-container1" >
@@ -48,7 +64,7 @@
   <nav>
 
 	<ul >
-       	 <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
+      <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
        	  <ul>
 			                <li><a href="#">Кисти</a></li>
 			                <li><a href="#">Декоративная <br> косметика</a>
@@ -85,129 +101,62 @@
         
    </div>
 
+ 
 
-
- <div class="grid-item color1 content">
-
-    <div class="flex-container3">
-
-		<div class="Content6"> Доставка </div> 
-		<div class="Content6"> 
-
-			<ol>
-
-			<li>Пункты выдачи заказов</li>
-			<li>Время доставки</li>
-			<li>Как отследить заказ</li>
-			<li>Условия доставки</li>
-
-
-			</ol>
-
-		</div> 
-
+  
+    
+  <div class="grid-item color1 content">
+         
+  
+<form method = "GET"id = "firstForm"  >
+<div class="flex-container15">
+	<div class="vhod1">
+	
+	<p>
+				<label for="email">Email: </label>
+				<input type="email" placeholder="user@gmail.com" id="email" name="email" />
+			</p>
 		
+		</div>
+
+
+		<div class="vhod1">
+        <p>
+		<label for = "password">Введите пароль:</label>
+        <input name = "password" type = "password" id = "password">
+        </p>
     </div>
+        <div class="vhod1">
+        <p>
+		<label for = "check">Введите ваш пароль еще раз:</label>
+        <input name = "check" type = "password">
+        </p>
+    </div>
+<div class="vhod1">
 
-    <div class="flex-container3">
+		<a class="button button-blue" href="../index.html">ВОЙТИ</a>
+</div>
+	
+		<div class="vhod1">
 
-		<div class="Content6"> Заказ</div> 
-		<div class="Content6"> 
+		<a href="../pages/reg.html" >ЗАРЕГИСТРИРОВАТЬСЯ </a>
+		</div>
+	
+	  </div>
 
-		<ol>
+	
+         
+		  
 
-			<li>Сколько <br> дней хранится <br> заказ в<br> пункте выдачи<br> СДЭК</li>
-			<li>Не получается оформить<br> заказ</li>
-			<li>Где найти промокод<br> на первый заказ</li>
+	
+</form>
 
+  </div> 
 
-		</ol>
+ 
+    
 
-
-
-		</div> 
-		
-     </div>
-
-
-
-     <div class="flex-container3">
-
-		<div class="Content6">Брак</div> 
-		<div class="Content6">При вскрытии посылки обнаружен товар с дефектом </div> 
-		
-     </div>
-
-
-     <div class="flex-container3">
-
-		<div class="Content6">Сборка</div> 
-		<div class="Content6"> 
-		
-
-		   <ol>
-
-			<li>Сколько дней занимает сборка заказа</li>
-			<li>Статус заказ не поменялся. Заказ не отправлен.</li>
-			
-
-		  </ol>
-
-		</div> 
-
-     </div>
-
-
-     <div class="flex-container3">
-
-		<div class="Content6">Обратная связь </div> 
-		<div class="Content6">  
-
-
-		<ol>
-
-			<li>Есть ли гарантия на Ваш товар</li>
-			<li>Как получить бонусы на сайте</li>
-			<li>Какой промо код на первый заказ</li>
-			
-
-		</ol>
-
-	   </div>
-		
-
-     </div>
-
-
-
-     <div class="flex-container3">
-
-		<div class="Content6">Оплата</div> 
-		<div class="Content6"> 
-
-
-        <ol>
-
-			<li>Способы оплаты</li>
-			<li>Наложенный платеж</li>
-			
-
-		</ol>
-
-		</div> 
-		
-     </div>
-
-
-
-
- </div>
-
-
-
-
-
-<div class="grid-item color1 footer">
+   <div class="grid-item color1 footer">
           
        <div class="flex-container4">
 
@@ -233,8 +182,7 @@
 
    </div
 
-
-
+   
 
 </body> 
 
