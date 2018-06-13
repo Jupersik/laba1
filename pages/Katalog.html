@@ -16,14 +16,7 @@
 
 
 
-<script language = "JavaScript">
-var bigsize = "250" ; //Размер большой картинки
-var smallsize = "220" ; //Размер маленькой картинки
-function changeSizeImage(im) {
-  if(im.height == bigsize) im.height = smallsize;
-  else im.height = bigsize;
-}
-</script>
+
 
 
  <!-- Подключаем jQuery -->
@@ -71,18 +64,18 @@ function changeSizeImage(im) {
     <div class="grid-item color1 header">
        <div class="flex-container">
 
-       	<div class="flex-container5">
+        <div class="flex-container5">
 
-		<div class="Header1"><a href="../index.html"><img src="../assets/Logo.png" class="Header12"></a></div> 
-		<div class="Header2">Поиск по каталогу</div> 
+    <div class="Header1"><a href="../index.html"><img src="../assets/Logo.png" class="Header12"></a></div> 
+    <div class="Header2">Поиск по каталогу</div> 
 
-	   </div>
+     </div>
 
-	   <div class="flex-container6">
+     <div class="flex-container6">
 
-    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img src="../assets/Vhod.png" width="35" height="35" alt=""></a></div></div> 
-    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="../assets/Heart.jpg" width="35" height="35"></a></div></div> 
-    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="../assets/Basket.jpg" width="35" height="35"></a></div></div> 
+    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img src="../assets/Vhod.png" width="30" height="30" alt=""></a></div></div> 
+    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="../assets/Heart.jpg" width="30" height="30"></a></div></div> 
+    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="../assets/Basket.jpg" width="30" height="30"></a></div></div> 
 
     </div>
    
@@ -99,16 +92,37 @@ function changeSizeImage(im) {
 
        <nav>
 
-	       <ul>
-       	       <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
-			        
-			        </li>
+         <ul>
+               <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
+
+                   <ul>
+                  <li><a href="../pages/Katalog.html#1">Кисти</a></li>
+                  <li><a href="../pages/Katalog.html#2">Декоративная <br> косметика</a>
+
+                    <ul>
+
+                            <li><a href="../pages/Katalog.html#3">Лицо</a></li>
+                      <li><a href="../pages/Katalog.html#4">Глаза</a></li>
+              <li><a href="../pages/Katalog.html#5">Губы</a></li>
+                      <li><a href="../pages/Katalog.html#6">Ногти</a></li>
+
+                               
+                    </ul>
+                       
+
+
+                      <li><a href="../pages/Katalog.html#7">Уходовая <br> косметика</a></li>
+                      <li><a href="../pages/Katalog.html#8">Бытовая <br>химия</a></li>
+                  </li>
+               </ul>
+              
+              </li>
        <li><div class="Banner4"> <a href="../pages/Question-answers.html">ВОПРОСЫ-ОТВЕТЫ</a></div> </li>
-	   <li><div class="Banner4"> <a href="../pages/Company-description.html">О НАС</a></div> </li>
-	   <li><div class="Banner4"> <a href="../pages/Company-news.html">НОВИНКИ</a></div> </li>
+     <li><div class="Banner4"> <a href="../pages/Company-description.html">О НАС</a></div> </li>
+     <li><div class="Banner4"> <a href="../pages/Company-news.html">НОВИНКИ</a></div> </li>
 
 
-	      </ul>
+        </ul>
 
        </nav>
 
@@ -117,20 +131,18 @@ function changeSizeImage(im) {
         
    </div>
 
- 
-
   
     
-  <div class="grid-item color1 content">
+  <div class="grid-item color1 content  listya" >
  
  
 
-<div class="h1"><h1>Кисти</h1></div>
+<div class="h1" ><h1 id="1">Кисти</h1></div>
 
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Brush.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Набор кистей для дизайна ногтей be an artist! nail art brush set, 279 р
+  <div class="Content6"><img src="../assets/Brush.jpg"  width="250" height="220" > 
+   essence Набор кистей для дизайна ногтей be an artist! nail art brush set, 279 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -146,7 +158,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Brush-lips.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>Real Techniques Набор для макияжа губ Prep + Color Lip Set, 1750 р
+  <div class="Content6"><img src="../assets/Brush-lips.jpg"  width="250" height="220" > Real Techniques Набор для макияжа губ Prep + Color Lip Set, 1750 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -159,8 +171,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Brush.png" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Аппликаторы 5 шт, 109 р
+ <div class="Content6"><img src="../assets/Brush.png"  width="250" height="220" > 
+  essence Аппликаторы 5 шт, 109 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -178,12 +190,12 @@ function changeSizeImage(im) {
 
 
 
-   <div class="h1"><h1>Декоративная косметика</h1></div>
-   <div class="h1"><h2>Лицо</h2></div>
+   <div class="h1"><h1 id="2">Декоративная косметика</h1></div>
+   <div class="h1"><h2 id="3">Лицо</h2></div>
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Blush.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Румяна в бумажных лепестках glow to go luminous blush paper , 274 р
+  <div class="Content6"><img src="../assets/Blush.jpg"  width="250" height="220" > 
+ essence Румяна в бумажных лепестках glow to go luminous blush paper , 274 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -199,7 +211,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Powder.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>Holika Holika Пудра прессованная "Холипоп Блюр", т 01, светло-бежевый, 10,5 г, 640 р
+  <div class="Content6"><img src="../assets/Powder.jpg"  width="250" height="220" > Holika Holika Пудра прессованная "Холипоп Блюр", т 01, светло-бежевый, 10,5 г, 640 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -212,8 +224,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Foundation.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> Secret Key Матирующий ББ крем Finish Up BB Cream, 30 мл, 414р
+ <div class="Content6"><img src="../assets/Foundation.jpg"  width="250" height="220" > 
+   Secret Key Матирующий ББ крем Finish Up BB Cream, 30 мл, 414р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -229,11 +241,11 @@ function changeSizeImage(im) {
 
    </div>
 
-   <div class="h1"><h2>Глаза</h2></div>
+   <div class="h1"><h2 id="4">Глаза</h2></div>
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Eyeshadow.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> CATRICE Палетка теней для век Professional Artist Eyeshadow Palette, 010 The Key Piece, 740 р
+  <div class="Content6"><img src="../assets/Eyeshadow.jpg"  width="250" height="220" > 
+  CATRICE Палетка теней для век Professional Artist Eyeshadow Palette, 010 The Key Piece, 740 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -249,7 +261,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Pencil.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>Sleek MakeUP Набор из трех карандашей для глаз Eau La La, 293 Raisin, 799 р
+  <div class="Content6"><img src="../assets/Pencil.jpg"  width="250" height="220" >Sleek MakeUP Набор из трех карандашей для глаз Eau La La, 293 Raisin, 799 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -262,8 +274,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Eyebrow.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Пудра для бровей my must haves eyebrow powder, 127 р
+ <div class="Content6"><img src="../assets/Eyebrow.jpg"  width="250" height="220" > 
+  essence Пудра для бровей my must haves eyebrow powder, 127 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -279,11 +291,11 @@ function changeSizeImage(im) {
 
    </div>
 
-   <div class="h1"><h2>Губы</h2></div>
+   <div class="h1"><h2 id="5">Губы</h2></div>
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Lip.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> Sleek MakeUP Палетка губных помад Lip 4, 249 р
+  <div class="Content6"><img src="../assets/Lip.jpg"  width="250" height="220" > 
+   Sleek MakeUP Палетка губных помад Lip 4, 249 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -299,7 +311,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Carmex.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>Carmex Бальзам для губ с ароматом мяты с защитой от воздействия ультрафиолета SPF15, туба в блистере, 249 р
+  <div class="Content6"><img src="../assets/Carmex.jpg"  width="250" height="220" > Carmex Бальзам для губ с ароматом мяты с защитой от воздействия ультрафиолета SPF15, туба в блистере, 249 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -312,8 +324,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Lip-powder.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Пудра для губ My must haves lip powder, 49 р
+ <div class="Content6"><img src="../assets/Lip-powder.jpg"  width="250" height="220" > 
+ essence Пудра для губ My must haves lip powder, 49 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -331,11 +343,11 @@ function changeSizeImage(im) {
 
 
 
-   <div class="h1"><h2>Ногти</h2></div>
+   <div class="h1"><h2 id="6">Ногти</h2></div>
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Nail.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence ... & the lovely little things Лак для ногтей nail polish, 49 р
+  <div class="Content6"><img src="../assets/Nail.jpg" width="250" height="220" > 
+   essence ... & the lovely little things Лак для ногтей nail polish, 49 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -351,7 +363,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Oil-nail.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>SOLOMEYA Масло для кутикулы и ногтей с витаминами Красный апельсин Cuticle Oil Red Оrange, 14 мл, 179 р
+  <div class="Content6"><img src="../assets/Oil-nail.jpg" width="250" height="220" > SOLOMEYA Масло для кутикулы и ногтей с витаминами Красный апельсин Cuticle Oil Red Оrange, 14 мл, 179 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -364,8 +376,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Nails.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> essence Накладные ногти на клейкой основе Nails in style 02 abso-nude-ly fabulous, 279 р
+ <div class="Content6"><img src="../assets/Nails.jpg" width="250" height="220"> 
+  essence Накладные ногти на клейкой основе Nails in style 02 abso-nude-ly fabulous, 279 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -381,12 +393,12 @@ function changeSizeImage(im) {
 
    </div>
 
-<div class="h1"><h1>Уходовая косметика</h1></div>
+<div class="h1"><h1 id="7">Уходовая косметика</h1></div>
 
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/Step.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> Holika Holika Очищающая система с древесным углем "Пиг Клиа Блэкхэд", 15 г, 250 p
+  <div class="Content6"><img src="../assets/Step.jpg"  width="250" height="220" > 
+  Holika Holika Очищающая система с древесным углем "Пиг Клиа Блэкхэд", 15 г, 250 p
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -402,7 +414,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Oil-hair.png" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>PLANETA ORGANICA Восстанавливающий эликсир (масло) д/укрепления и роста волос, 50 мл, 259 р
+  <div class="Content6"><<img src="../assets/Oil-hair.png"  width="250" height="220" > PLANETA ORGANICA Восстанавливающий эликсир (масло) д/укрепления и роста волос, 50 мл, 259 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -415,8 +427,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Foam.png" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a>ORGANIC SHOP Молоко для ванн увлажняющее "Milk and Raspberry", 450 мл, 245 р
+ <div class="Content6"><img src="../assets/Foam.png"  width="250" height="220" > 
+ ORGANIC SHOP Молоко для ванн увлажняющее "Milk and Raspberry", 450 мл, 245 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -432,12 +444,12 @@ function changeSizeImage(im) {
 
    </div>
 
-   <div class="h1"><h1>Бытовая химия</h1></div>
+   <div class="h1"><h1 id="8">Бытовая химия</h1></div>
 
    <div class="flex-container3">
   
-  <div class="Content6"><a href='#' id='1'><img src="../assets/LV.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a> LV Cтиральный концентрированный порошок для белого белья 750 гр, 458 Р
+  <div class="Content6"><img src="../assets/LV.jpg"  width="250" height="220" > 
+  LV Cтиральный концентрированный порошок для белого белья 750 гр, 458 Р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -453,7 +465,7 @@ function changeSizeImage(im) {
   
 
 
-  <div class="Content6"><a href='#' id='2'><img src="../assets/Bay.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>VIVAL Набор хозяйственных мочалок универсал+премиум (2шт.) в ассортименте, 31 р
+  <div class="Content6"><img src="../assets/Bay.jpg"  width="250" height="220" > VIVAL Набор хозяйственных мочалок универсал+премиум (2шт.) в ассортименте, 31 р
   <p>
       <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -466,8 +478,8 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
- <div class="Content6"><a href='#' id='1'><img src="../assets/Means.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> 
-  </a>LV Средство для мытья посуды 500 мл, 295 р
+ <div class="Content6"><img src="../assets/Means.jpg"  width="250" height="220" > 
+  LV Средство для мытья посуды 500 мл, 295 р
    <p>
     <button>
     <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 

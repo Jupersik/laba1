@@ -2,3 +2,18 @@
 {
 	text-align: center;
 }
+
+  .listya{
+   
+   
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    overflow: auto;
+   
+   
+    box-sizing: border-box;
+    width: 59em;
+    height: 30em;
+
+   }

@@ -15,15 +15,6 @@
 
 
 
-<script language = "JavaScript">
-var bigsize = "250" ; //Размер большой картинки
-var smallsize = "220" ; //Размер маленькой картинки
-function changeSizeImage(im) {
-  if(im.height == bigsize) im.height = smallsize;
-  else im.height = bigsize;
-}
-</script>
-
 
  <!-- Подключаем jQuery -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -67,7 +58,7 @@ function changeSizeImage(im) {
 
 <body class="grid-container"> 
 
-    <div class="grid-item color1 header">
+    <div class="grid-item color1 header"  >
        <div class="flex-container">
 
        	<div class="flex-container5">
@@ -79,9 +70,9 @@ function changeSizeImage(im) {
 
 	   <div class="flex-container6">
 
-		<div class="Header3"><a href="pages/Vhod.html"><div class="photo" data-title="Войти"><img src="assets/Vhod.png" width="35" height="35" alt=""></a></div></div> 
-		<div class="Header3"><a href="pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="assets/Heart.jpg" width="35" height="35"></a></div></div> 
-		<div class="Header3"><a href="pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="assets/Basket.jpg" width="35" height="35"></a></div></div> 
+		<div class="Header3"><a href="pages/Vhod.html"><div class="photo" data-title="Войти"><img src="assets/Vhod.png" width="30" height="30" alt=""></a></div></div> 
+		<div class="Header3"><a href="pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="assets/Heart.jpg" width="30" height="30"></a></div></div> 
+		<div class="Header3"><a href="pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="assets/Basket.jpg" width="30" height="30"></a></div></div> 
 
 	  </div>
    
@@ -102,23 +93,23 @@ function changeSizeImage(im) {
        	       <li> <a href="#"> <div class="Banner4"> <a href="pages/Katalog.html">КАТАЛОГ</a> </a></div> 
 
        	           <ul>
-			            <li><a href="#">Кисти</a></li>
-			            <li><a href="#">Декоративная <br> косметика</a>
+			            <li><a href="pages/Katalog.html#1">Кисти</a></li>
+			            <li><a href="pages/Katalog.html#2">Декоративная <br> косметика</a>
 
 			              <ul>
 
-                            <li><a href="#">Лицо</a></li>
-			                <li><a href="#">Глаза</a></li>
-							<li><a href="#">Губы</a></li>
-			                <li><a href="#">Ногти</a></li>
+                            <li><a href="pages/Katalog.html#3">Лицо</a></li>
+			                <li><a href="pages/Katalog.html#4">Глаза</a></li>
+							<li><a href="pages/Katalog.html#5">Губы</a></li>
+			                <li><a href="pages/Katalog.html#6">Ногти</a></li>
 
                                
 			              </ul>
 			                 
 
 
-			                <li><a href="#">Уходовая <br> косметика</a></li>
-			                <li><a href="#">Бытовая <br>химия</a></li>
+			                <li><a href="pages/Katalog.html#7">Уходовая <br> косметика</a></li>
+			                <li><a href="pages/Katalog.html#8">Бытовая <br>химия</a></li>
 			            </li>
 		           </ul>
 			        
@@ -151,7 +142,7 @@ function changeSizeImage(im) {
 
    <div class="flex-container3">
  	
-	<div class="Content6"><div class="photo1" data-title="Моментальная сушка для ногтей с отбеливающей формулой не только поможет завершить маникюр в считанные секунды, но и заметно усилит сияние лака, надолго придавая ногтям безупречный вид."><img src="assets/Drying.jpg" id="1" width="250" height="220" onclick="changeSizeImage(this)"/> </div>
+	<div class="Content6"><a href="pages/Goods1.html"><div class="photo1" data-title="Моментальная сушка для ногтей с отбеливающей формулой не только поможет завершить маникюр в считанные секунды, но и заметно усилит сияние лака, надолго придавая ногтям безупречный вид."><img src="assets/Drying.jpg"  width="250" height="220"> </div></a>
 	</a> CATRICE Сушка для ногтей Super Dry Gloss Top Coat, 169 р 
 	 <p>
 		<button>
@@ -167,7 +158,7 @@ function changeSizeImage(im) {
 
 
 
-	<div class="Content6"><a href='#' id='2'><img src="assets/Higlighter.jpg" id="2" width="250" height="220" onclick="changeSizeImage(this)"/> </a>CATRICE Хайлайтер мультицветный 5 в 1 Light Spectrum Strobing Brick, 020 Spirit of Africa, 365 р 
+	<div class="Content6"><img src="assets/Higlighter.jpg"  width="250" height="220" > CATRICE Хайлайтер мультицветный 5 в 1 Light Spectrum Strobing Brick, 020 Spirit of Africa, 365 р 
 	<p>
 	    <button>
     <img src="assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
@@ -180,13 +171,12 @@ function changeSizeImage(im) {
    </button> 
    </div> 
 
-   <div id='box1' style='display: none;padding:10px;background-color: rgb(205, 104, 137);;margin:10px;width:210px;'>Палетка пудровых хайлайтеров объединяет в себе пять сияющих оттенков. Каждый из них можно использовать отдельно или смешивать вместе для получения эффекта нежно мерцающей кожи. Палетка доступна в трех цветовых комбинациях.</div>
-
-   </div>
+  </div>
+  
 
     <div class="flex-container3">
 
-	<div class="Content6"><img src="assets/Higlighter2.jpg" width="250" height="220" onclick="changeSizeImage(this)"/> 
+	<div class="Content6"><img src="assets/Higlighter2.jpg" width="250" height="220" > 
 	CATRICE Палетка хайлайтеров Galaxy In A Box Holographic Glow Palette, 010 Out of Space, 673 р 
 	<p>
 		<button>
@@ -200,7 +190,7 @@ function changeSizeImage(im) {
        </button>
 
    </div> 
-    <div class="Content6"><img src="assets/Brow.jpg" width="250" height="220" onclick="changeSizeImage(this)"/> 
+    <div class="Content6"><img src="assets/Brow.jpg" width="250" height="220" > 
     CATRICE Помада для бровей и корректор 2 в 1 Brow Hero 2in1 Brow Pomade & Camouflage Waterproof, 277 р  
     <p>
     	<button>
@@ -218,7 +208,7 @@ function changeSizeImage(im) {
 
      <div class="flex-container3">
 
-		<div class="Content6"> <img src="assets/Pomade.jpg" width="250" height="220" onclick="changeSizeImage(this)"/ > CATRICE Матовая палетка для макияжа губ Creatrice Creamy Matt Lip Palette, 010 Back To The Nudes, 538 р <p><button>
+		<div class="Content6"> <img src="assets/Pomade.jpg" width="250" height="220"  > CATRICE Матовая палетка для макияжа губ Creatrice Creamy Matt Lip Palette, 010 Back To The Nudes, 538 р <p><button>
     <img src="assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
     <a href="pages/Korzina.html">Добавить в корзину</a>
    </button>
@@ -227,7 +217,7 @@ function changeSizeImage(im) {
     <img src="assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
     <a href="pages/Wish-list.html">Добавить в список желаний</a>
    </button> </div> 
-		<div class="Content6"> <img src="assets/Pomade2.jpg" width="250" height="220" onclick="changeSizeImage(this)"/ >CATRICE Палетка помад для губ Lip Artist PRO Palette, 010 IndividuaLIP, 673 р <p><button>
+		<div class="Content6"> <img src="assets/Pomade2.jpg" width="250" height="220"  >CATRICE Палетка помад для губ Lip Artist PRO Palette, 010 IndividuaLIP, 673 р <p><button>
     <img src="assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
     <a href="pages/Korzina.html">Добавить в корзину</a>
    </button>
@@ -240,7 +230,7 @@ function changeSizeImage(im) {
 	 </div>
 
 	 <div class="flex-container3">
-		<div class="Content6"> <img src="assets/Balm.jpg" width="250" height="220" onclick="changeSizeImage(this)"/ > CATRICE Бальзам для губ Lip Treatment, 010 Lip Pyjama, 227 р <p><button>
+		<div class="Content6"> <img src="assets/Balm.jpg" width="250" height="220"  > CATRICE Бальзам для губ Lip Treatment, 010 Lip Pyjama, 227 р <p><button>
     <img src="assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
     <a href="pages/Korzina.html">Добавить в корзину</a>
    </button>
@@ -250,7 +240,7 @@ function changeSizeImage(im) {
     <a href="pages/Wish-list.html">Добавить в список желаний</a>
    </button>
 		</div> 
-		<div class="Content6"> <img src="assets/Shadows.jpg" width="250" height="220" onclick="changeSizeImage(this)"/ >CATRICE Палетка теней для век Instant Glam Eyeshadow Palette, 010 It's A Match!, 471 р  <p><button>
+		<div class="Content6"> <img src="assets/Shadows.jpg" width="250" height="220"  >CATRICE Палетка теней для век Instant Glam Eyeshadow Palette, 010 It's A Match!, 471 р  <p><button>
     <img src="assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
     <a href="pages/Korzina.html">Добавить в корзину</a>
    </button>
@@ -265,7 +255,7 @@ function changeSizeImage(im) {
 
 
   </div> 
-
+</div>
  
     
 
