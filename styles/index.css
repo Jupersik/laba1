@@ -10,7 +10,6 @@
 .flex-container3 {
  justify-content: space-around;
  overflow: hidden;
-
 }
 
 
@@ -40,12 +39,7 @@
 }
 
 
-.Content11{
 
-  width:220px;
-  height:195px;
-
-}
 .grid-container { 
   grid-template-columns: 100%;
   grid-template-rows: 10% 10% 158% 25%; 

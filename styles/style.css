@@ -31,8 +31,8 @@
 .flex-container5 {
   display: flex;
   justify-content: flex-start;
- flex-direction: row;
- width: 70%;
+  flex-direction: row;
+  width: 85%;
 
 }
 
@@ -245,8 +245,8 @@ a:active{
 
 
 .Img5{
-  width:30px;
-  height:30px; 
+  width:25px;
+  height:25px; 
 }
 
 
@@ -257,3 +257,4 @@ a:active{
   height: 70px;
   float: left;
 }
+
