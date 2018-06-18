@@ -3,7 +3,6 @@
   background-image:url(../assets/Background.jpg);
   font-family:"COMIC SANS MS"; 
   font-size: 18px;
-
   grid-row-gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -25,10 +24,8 @@
 
 
 .flex-container4 {
-  display: flex;
   margin: 1%;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .flex-container5 {
@@ -57,16 +54,9 @@
 
 
 .Header2{
-  border: 1.5px solid gray;
   margin: 15px;
   padding: 0.5em; 
-  width: 63%;
-  height:1em;
-  color:gray;
-  align-items: center;
   font-size: 15px;
-  background-color:white;
-  white-space: nowrap;
 }
 
 
@@ -95,25 +85,19 @@
 
 
 .Footer7{
-  display: flex;
-  flex-basis: 45%;
-  flex-direction: column;
   margin: 0.5em;
-  padding: 0.7em; 
   color:#9400D3;
   background-color: rgb(205, 104, 137);
-  width: auto;
-  height:auto;
-  align-items: center;
-  justify-content: center;
   text-align: center; 
  }
 
 .Footer10{
-
   color:black;
-  
+}
 
+
+.Footer11{
+  margin-bottom: 30px;
 }
 
 .Header12
@@ -127,10 +111,10 @@
 .header { 
   grid-area: header;
   width: 85%;
-  height:100%;
   margin: 0 auto;
   opacity: 0.88;
   filter: alpha(Opacity=88); 
+
 } 
 
 .banner { 
@@ -139,8 +123,8 @@
   margin: 0 auto;
   opacity: 0.88;
   filter: alpha(Opacity=88);
-z-index: 100;
-position: relative;
+  z-index: 100;
+  position: relative;
 } 
 
 
@@ -150,9 +134,7 @@ position: relative;
   margin: 0 auto;
   opacity: 0.88;
   filter: alpha(Opacity=88); 
-  z-index: -1;
-
-
+ 
 } 
     
 .footer { 
@@ -165,130 +147,113 @@ position: relative;
 
 
 
-  .color1 { 
+.color1 { 
   background-color:rgb(205, 150,205)
 }
 
-.article-picture
-{
-  margin: 0 10px;
-}
+
 
 nav ul {
-         margin: 0;
-         padding:0;
-         list-style: none;
-         position: relative;
 
-
-       
-          }
+  margin: 0;
+  padding:0;
+  list-style: none;
+  position: relative;
+}
 
       
-      nav ul li {
+nav ul li {
 
-          display:inline-block;
-          background-color:#800080;
-          border: 1px solid black;
-          float: left;
-          position: relative;
-    
-
-          
-          
-
-          
-          }
+  display:inline-block;
+  background-color:#800080;
+  border: 1px solid black;
+  float: left;
+  position: relative;
+   
+}
       
     
-      nav a {
-          display:block;
-          padding:0 10px;
-          color:#FFF;
-          text-decoration:none;
-       
-      }
+nav a {
+  display:block;
+  padding:0 10px;
+  color:#FFF;
+  text-decoration:none;
+}
       
       
-      nav a:hover {
-          background-color: #DA70D6;
-
-    }
-
+nav a:hover {
+  background-color: #DA70D6;
+}
 
 
- 
-
-
-       nav ul ul {
-          display: none;
-          position:absolute;
-          top: 100%;
-       
-      }
+nav ul ul {
+  display: none;
+  position:absolute;
+  top: 100%;
+}
       
      
-     nav ul li:hover > ul {
-          display:inherit;
-
-
-      }
+nav ul li:hover > ul {
+ display:inherit;
+}
       
     
-       nav ul ul li {
-          min-width:140px;
-          float:none;
-          display:list-item;
-          position: relative;
+nav ul ul li {
+  min-width:140px;
+  float:none;
+  display:list-item;
+  position: relative;
         
+}
 
-      }
 
-
-  nav ul ul ul {
-          position: absolute;
-          top:0;
-          left:100%;
-
-          
-    }
+nav ul ul ul {
+  position: absolute;
+  top:0;
+  left:100%;
+}
 
   
-   .photo {
-    display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
-   }
-   .photo:hover::after {
-    content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    left: 20%; top: 30%; /* Положение подсказки */
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
-    background: rgba(205,104,137,0.9); /* Полупрозрачный цвет фона */
-    font-family: "COMIC SANS MS"; /* Гарнитура шрифта */
-    font-size: 11px; /* Размер текста подсказки */
-    padding: 5px 10px; /* Поля */
-    border: 1px solid #333; /* Параметры рамки */
-   }
+a{
+  color:white;
+}
+
+a:visited{
+  color:white;
+}
+
+a:active{
+  color:white;
+}
 
 
-
-   .photo1 {
-    display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
-   }
-   .photo1:hover::after {
-    content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    left: 0%; top: 0%; /* Положение подсказки */
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
-    background: rgba(205,104,137,0.9); /* Полупрозрачный цвет фона */
-     font-family:"COMIC SANS MS";  /* Гарнитура шрифта */
-    font-size: 18px; /* Размер текста подсказки */
-    padding: 5px 10px; /* Поля */
-    border: 1px solid #333; /* Параметры рамки */
-
-    width: 230px;
-    height: 210px;
-   }
+.Photo {
+  display: inline-block;
+  position: relative; /
+}
+.Photo:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 20%; top: 30%;
+  z-index: 1; 
+  background: rgba(205,104,137,0.9); 
+  font-family: "COMIC SANS MS"; 
+  font-size: 11px; 
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
 
 
+.Img5{
+  width:30px;
+  height:30px; 
+}
+
+
+.Article-picture
+{
+  margin: 0 10px;
+  width: 70px;
+  height: 70px;
+  float: left;
+}

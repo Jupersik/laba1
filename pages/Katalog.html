@@ -9,54 +9,9 @@
 <meta name="author" content="Novoselova Julia"> 
 <meta name="keywords" content="BeautyHome"> 
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="../styles/index.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../styles/Katalog.css">
 <link rel="shortcut icon" href="../assets/Beauty.jpg" type="image/jpg">
-<link rel="stylesheet" type="text/css" href="style.css" />
-
-
-
-
-
-
- <!-- Подключаем jQuery -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
- 
-  <!-- Скрипт плавного открытия и закрытия блока -->
-  <script type='text/javascript'> 
-    $(document).ready(function() { 
-      $("A#1").toggle(function() { 
-      	
-        // Отображаем скрытый блок 
-        $("DIV#box").fadeIn(); // fadeIn - плавное появлени
-        return false; // не производить переход по ссылке
-      },  
-      function() { 
-        // Скрываем блок 
-        $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение 
-        return false; // не производить переход по ссылке
-      }); // end of toggle() 
-    }); // end of ready() 
-  </script> 
-  <!-- Скрипт плавного открытия и закрытия блока -->
-  <script type='text/javascript'> 
-    $(document).ready(function() { 
-      $("A#2").toggle(function() { 
-      	
-        // Отображаем скрытый блок 
-        $("DIV#box1").fadeIn(); // fadeIn - плавное появлени
-        return false; // не производить переход по ссылке
-      },  
-      function() { 
-        // Скрываем блок 
-        $("DIV#box1").fadeOut(); // fadeOut - плавное исчезновение 
-        return false; // не производить переход по ссылке
-      }); // end of toggle() 
-    }); // end of ready() 
-  </script> 
-
-
-
 </head> 
 
 <body class="grid-container"> 
@@ -67,15 +22,20 @@
         <div class="flex-container5">
 
     <div class="Header1"><a href="../index.html"><img src="../assets/Logo.png" class="Header12"></a></div> 
-    <div class="Header2">Поиск по каталогу</div> 
+      <label class="Header2">
+
+                <input placeholder="Поиск по каталогу" >
+
+      </label>
 
      </div>
 
      <div class="flex-container6">
 
-    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img src="../assets/Vhod.png" width="30" height="30" alt=""></a></div></div> 
-    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="../assets/Heart.jpg" width="30" height="30"></a></div></div> 
-    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="../assets/Basket.jpg" width="30" height="30"></a></div></div> 
+    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img class="Img5" src="../assets/Vhod.png"></a></div></div> 
+    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img class="Img5" src="../assets/Heart.jpg"></a></div></div> 
+    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img class="Img5" src="../assets/Basket.jpg">
+    </a></div></div> 
 
     </div>
    
@@ -88,12 +48,12 @@
     <div class="grid-item color1 banner">
 
 
-       <div class="flex-container1" >
+       <div class="flex-container1 row" >
 
        <nav>
 
          <ul>
-               <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
+               <li> <a href="#"> <div class="Banner4 col-lg-12 col-sm-12 col-xs-8 "> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
 
                    <ul>
                   <li><a href="../pages/Katalog.html#1">Кисти</a></li>
@@ -102,9 +62,9 @@
                     <ul>
 
                             <li><a href="../pages/Katalog.html#3">Лицо</a></li>
-                      <li><a href="../pages/Katalog.html#4">Глаза</a></li>
-              <li><a href="../pages/Katalog.html#5">Губы</a></li>
-                      <li><a href="../pages/Katalog.html#6">Ногти</a></li>
+                            <li><a href="../pages/Katalog.html#4">Глаза</a></li>
+                            <li><a href="../pages/Katalog.html#5">Губы</a></li>
+                            <li><a href="../pages/Katalog.html#6">Ногти</a></li>
 
                                
                     </ul>
@@ -117,7 +77,7 @@
                </ul>
               
               </li>
-       <li><div class="Banner4"> <a href="../pages/Question-answers.html">ВОПРОСЫ-ОТВЕТЫ</a></div> </li>
+     <li><div class="Banner4"> <a href="../pages/Question-answers.html">ВОПРОСЫ-ОТВЕТЫ</a></div> </li>
      <li><div class="Banner4"> <a href="../pages/Company-description.html">О НАС</a></div> </li>
      <li><div class="Banner4"> <a href="../pages/Company-news.html">НОВИНКИ</a></div> </li>
 
@@ -133,56 +93,90 @@
 
   
     
-  <div class="grid-item color1 content  listya" >
+  <div class="grid-item color1 content">
  
- 
+   
+     <div class="h1"><h1 id="1">Кисти</h1></div>
 
-<div class="h1" ><h1 id="1">Кисти</h1></div>
-
-   <div class="flex-container3">
+    <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Brush.jpg"  width="250" height="220" > 
-   essence Набор кистей для дизайна ногтей be an artist! nail art brush set, 279 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+      <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+          <a href="../pages/Goods14.html">
+  
+         <div class="Photo3"  data-title="Три разные кисти в наборе помогут сделать уникальный арт-маникюр. Самой тонкой из них ты сможешь нарисовать цветочные и абстрактные узоры.">
+         <img class="Img1" src="../assets/Brush.jpg" > 
+         </div>
+
+    </a>
+      essence Набор кистей для дизайна ногтей be an artist! nail art brush set, 279 р
+    <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Brush-lips.jpg"  width="250" height="220" > Real Techniques Набор для макияжа губ Prep + Color Lip Set, 1750 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+     <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+   <a href="../pages/Goods15.html">
+  
+         <div class="Photo3"  data-title="Кисти № 1 в Великобритании. Лимитированный набор Prep + Color Lip Set содержит все необходимое для создания идеального макияжа губ. ">
+         <img class="Img1" src="../assets/Brush-lips.jpg" > 
+         </div>
+
+  </a>
+
+
+      Real Techniques Набор для макияжа губ Prep + Color Lip Set, 1750 р
+ <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div> 
 
- <div class="Content6"><img src="../assets/Brush.png"  width="250" height="220" > 
+
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+   <a href="../pages/Goods16.html">
+  
+         <div class="Photo3"  data-title="Очень практичны,
+               идеальны для того, чтобы носить их в сумочке,
+               5 кисточек для теней с ручками располагаются в удобном футляре с отдельными секциями для каждой кисточки.">
+         <img class="Img1" src="../assets/Brush.png"> 
+         </div>
+
+  </a>
+
+
   essence Аппликаторы 5 шт, 109 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+  <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
@@ -192,150 +186,238 @@
 
    <div class="h1"><h1 id="2">Декоративная косметика</h1></div>
    <div class="h1"><h2 id="3">Лицо</h2></div>
-   <div class="flex-container3">
+   <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Blush.jpg"  width="250" height="220" > 
- essence Румяна в бумажных лепестках glow to go luminous blush paper , 274 р
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+     <a href="../pages/Goods17.html">
+  
+         <div class="Photo3"  data-title="Румяна в необычном формате салфеток помогут всегда выглядеть свежо. Всего одно прикосновение, и на скулах появится нежно-розовое или золотисто-бронзовое сияние.">
+         <img class="Img1" src="../assets/Blush.jpg"> 
+         </div>
+
+    </a>
+    essence Румяна в бумажных лепестках glow to go luminous blush paper , 274 р
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Powder.jpg"  width="250" height="220" > Holika Holika Пудра прессованная "Холипоп Блюр", т 01, светло-бежевый, 10,5 г, 640 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+    <a href="../pages/Goods18.html">
+  
+         <div class="Photo3"  data-title="Пудра содержит формулу Upolu Barrier™, экстракт лилии, экстракт белого гриба, лецитин. Порошок Anti-Darkening отражает свет в различных направлениях, придавая коже здоровую яркость и сияние.">
+         <img class="Img1" src="../assets/Powder.jpg"> 
+         </div>
 
- <div class="Content6"><img src="../assets/Foundation.jpg"  width="250" height="220" > 
-   Secret Key Матирующий ББ крем Finish Up BB Cream, 30 мл, 414р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    </a>
+
+
+    Holika Holika Пудра прессованная "Холипоп Блюр", т 01, светло-бежевый, 10,5 г, 640 р
+  <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+ <div class="Content6  col-lg-4 col-sm-8 col-xs-8">
+  <a href="../pages/Goods19.html">
+  
+         <div class="Photo3"  data-title="ББ-крем обеспечивает натуральное равномерное покрытие и идеально подстраивается под тон кожи, легко распределяется по коже, не оставляя липкости и не создавая эффекта маски, скрывает недостатки.">
+         <img class="Img1" src="../assets/Foundation.jpg"> 
+         </div>
+
+  </a>
+
+
+   Secret Key Матирующий ББ крем Finish Up BB Cream, 30 мл, 414р
+   <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
    </div>
 
    <div class="h1"><h2 id="4">Глаза</h2></div>
-   <div class="flex-container3">
+   <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Eyeshadow.jpg"  width="250" height="220" > 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+   <a href="../pages/Goods20.html">
+  
+         <div class="Photo3"  data-title="Профессиональная палетка для макияжа глаз от CATRICE включает 16 ультрапигментированных стойких оттенков теней. Нежные пудровые текстуры с различными финишами – матовым и шиммерным.">
+         <img class="Img1" src="../assets/Eyeshadow.jpg"> 
+         </div>
+
+   </a>
+
   CATRICE Палетка теней для век Professional Artist Eyeshadow Palette, 010 The Key Piece, 740 р
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Pencil.jpg"  width="250" height="220" >Sleek MakeUP Набор из трех карандашей для глаз Eau La La, 293 Raisin, 799 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+    <a href="../pages/Goods21.html">
+  
+         <div class="Photo3"  data-title="Карандаши для глаз из серии Eau La La обладают высокой стойкостью, пигментацией и кремовой текстурой, благодаря чему идеально подходят как для прорисовки четкого контура, так и для растушевки.">
+         <img class="Img1" src="../assets/Pencil.jpg"> 
+         </div>
 
- <div class="Content6"><img src="../assets/Eyebrow.jpg"  width="250" height="220" > 
-  essence Пудра для бровей my must haves eyebrow powder, 127 р
+   </a>
+
+    Sleek MakeUP Набор из трех карандашей для глаз Eau La La, 293 Raisin, 799 р
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+   <a href="../pages/Goods22.html">
+  
+         <div class="Photo3"  data-title="В дополнение к продуктам для губ, глаз и лица, в линейке «my must haves» появятся два оттенка пудры для бровей. Не забудь добавить новинку в свою палетку для сменных рефилов от essence.">
+         <img class="Img1" src="../assets/Eyebrow.jpg"> 
+         </div>
+
+   </a> 
+  essence Пудра для бровей my must haves eyebrow powder, 127 р
+  <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
    </div>
 
    <div class="h1"><h2 id="5">Губы</h2></div>
-   <div class="flex-container3">
+   <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Lip.jpg"  width="250" height="220" > 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+   <a href="../pages/Goods23.html">
+  
+         <div class="Photo3"  data-title="Этот компактный набор идеален для макияжа губ, так как объединяет в себе сразу 2 вида финиша - матовый и глянцевый - а также большое зеркало и удобную кисть для нанесения помады.">
+         <img class="Img1" src="../assets/Lip.jpg"> 
+         </div>
+
+   </a> 
+
+
    Sleek MakeUP Палетка губных помад Lip 4, 249 р
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Carmex.jpg"  width="250" height="220" > Carmex Бальзам для губ с ароматом мяты с защитой от воздействия ультрафиолета SPF15, туба в блистере, 249 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+   <a href="../pages/Goods24.html">
+  
+         <div class="Photo3"  data-title="Бальзам Carmex в тубе, классический и с ароматами вишни, клубники и мяты. Прекрасно увлажняет губы маслом какао. Содержит ланолин, помогающий удерживать влагу. С помощью камфоры в составе снимает раздражение и боль.">
+         <img class="Img1" src="../assets/Carmex.jpg"> 
+         </div>
 
- <div class="Content6"><img src="../assets/Lip-powder.jpg"  width="250" height="220" > 
- essence Пудра для губ My must haves lip powder, 49 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+   </a> 
+
+     Carmex Бальзам для губ с ароматом мяты с защитой от воздействия ультрафиолета SPF15, туба в блистере, 249 р
+    <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+
+   <a href="../pages/Goods25.html">
+  
+         <div class="Photo3"  data-title="Пудра для губ с шелковстой текстурой легко наносится и создает необычайно яркое и бархатистое покрытие губ, без ощущения сухости и стянутости. 
+        Собери свою идеальную палитру с линейкой my must haves от essence!">
+         <img class="Img1" src="../assets/Lip-powder.jpg"> 
+         </div>
+
+   </a> 
+
+ essence Пудра для губ My must haves lip powder, 49 р
+   <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
@@ -344,50 +426,78 @@
 
 
    <div class="h1"><h2 id="6">Ногти</h2></div>
-   <div class="flex-container3">
+   <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Nail.jpg" width="250" height="220" > 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+  <a href="../pages/Goods26.html">
+  
+         <div class="Photo3"  data-title="Четыре нежных оттенка лаков с разнообразными эффектами – от матового до суперсияющего – станут лучшими «спутниками» твоих ногтей в наступающем сезоне.">
+         <img class="Img1" src="../assets/Nail.jpg"> 
+         </div>
+
+   </a> 
+
    essence ... & the lovely little things Лак для ногтей nail polish, 49 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Oil-nail.jpg" width="250" height="220" > SOLOMEYA Масло для кутикулы и ногтей с витаминами Красный апельсин Cuticle Oil Red Оrange, 14 мл, 179 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
 
- <div class="Content6"><img src="../assets/Nails.jpg" width="250" height="220"> 
-  essence Накладные ногти на клейкой основе Nails in style 02 abso-nude-ly fabulous, 279 р
+   <a href="../pages/Goods27.html">
+  
+         <div class="Photo3"  data-title="У средства очень приятный цитрусовый аромат. Масло обладает отбеливающим эффектом, смягчает кожу и укрепляет ногти. Масло быстро впитывается и кутикула после нанесения мгновенно преображается.">
+         <img class="Img1" src="../assets/Oil-nail.jpg"> 
+         </div>
+
+   </a> 
+    SOLOMEYA Масло для кутикулы и ногтей с витаминами Красный апельсин Cuticle Oil Red Оrange, 14 мл, 179 р
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+  <a href="../pages/Goods28.html">
+  
+         <div class="Photo3"  data-title="Популярные и востребованные: накладные ногти с системой click & go в стильном нюдовом оттенке. 12 самоклеящихся типсов придадут твоему маникюру профессиональный вид, как будто ты только что сделала маникюр в салоне!">
+         <img class="Img1" src="../assets/Nails.jpg"> 
+         </div>
+
+  </a> 
+
+  essence Накладные ногти на клейкой основе Nails in style 02 abso-nude-ly fabulous, 279 р
+   <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
@@ -395,101 +505,161 @@
 
 <div class="h1"><h1 id="7">Уходовая косметика</h1></div>
 
-   <div class="flex-container3">
+   <div class="flex-container3 row">
   
-  <div class="Content6"><img src="../assets/Step.jpg"  width="250" height="220" > 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+  <a href="../pages/Goods29.html">
+  
+         <div class="Photo3"  data-title="Трехступенчатая система c содержит экстракт гаммамелиса, мяты перечной, хризантемы, марокканскую глину, экстракт черного риса и экстракт черного кунжута.">
+         <img class="Img1" src="../assets/Step.jpg"> 
+         </div>
+
+  </a> 
+
+
   Holika Holika Очищающая система с древесным углем "Пиг Клиа Блэкхэд", 15 г, 250 p
    <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><<img src="../assets/Oil-hair.png"  width="250" height="220" > PLANETA ORGANICA Восстанавливающий эликсир (масло) д/укрепления и роста волос, 50 мл, 259 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
 
- <div class="Content6"><img src="../assets/Foam.png"  width="250" height="220" > 
- ORGANIC SHOP Молоко для ванн увлажняющее "Milk and Raspberry", 450 мл, 245 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+  <a href="../pages/Goods30.html">
+  
+         <div class="Photo3"  data-title="Тысячелетние традиции красоты и опыт индийской Аюрведы открыли нам секрет красоты невероятно длинных и сильных волос индийских женщин. Сочетание трех легендарных масел - амлы, молодого чеснока и репейного масла, это кладезь витаминов.">
+         <img class="Img1" src="../assets/Oil-hair.png"> 
+         </div>
+
+  </a> 
+
+    PLANETA ORGANICA Восстанавливающий эликсир (масло) д/укрепления и роста волос, 50 мл, 259 р
+  <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+  <a href="../pages/Goods31.html">
+  
+         <div class="Photo3"  data-title="Молоко ещё с древних времён известно своим увлажняющим и очищающим свойством. Молочные протеины обеспечивают сохранение гладкости и свежести кожи. Масло миндаля отлично подтягивает, смягчает, питает и увлажняет кожу.">
+         <img class="Img1" src="../assets/Foam.png"> 
+         </div>
+
+  </a> 
+
+ ORGANIC SHOP Молоко для ванн увлажняющее "Milk and Raspberry", 450 мл, 245 р
+    <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
    </div>
 
    <div class="h1"><h1 id="8">Бытовая химия</h1></div>
+   <div class="flex-container3 row">
 
-   <div class="flex-container3">
+   <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+  <a href="../pages/Goods32.html">
   
-  <div class="Content6"><img src="../assets/LV.jpg"  width="250" height="220" > 
+         <div class="Photo3"  data-title="15-30% пятновыводителя на кислородной основе, 5-15 % поверхностно-активные вещества не содержащие ионов, <5% мыло, поликарбоксилат, цитрат, силикат, энзимыSodium Carbonate, Sodium Chloride, Sodium carbonate peroxide, Sodium Sulphate, Sodium Silic.">
+         <img class="Img1" src="../assets/LV.jpg"> 
+         </div>
+
+  </a> 
+
   LV Cтиральный концентрированный порошок для белого белья 750 гр, 458 Р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+    <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
   
 
 
-  <div class="Content6"><img src="../assets/Bay.jpg"  width="250" height="220" > VIVAL Набор хозяйственных мочалок универсал+премиум (2шт.) в ассортименте, 31 р
-  <p>
-      <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
-       </button>
-    </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
-   </div> 
+  <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+ <a href="../pages/Goods33.html">
 
- <div class="Content6"><img src="../assets/Means.jpg"  width="250" height="220" > 
-  LV Средство для мытья посуды 500 мл, 295 р
-   <p>
-    <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Korzina.html">Добавить в корзину</a>
+         <img class="Img1" src="../assets/Bay.jpg"> 
+    
+
+  </a> 
+
+    VIVAL Набор хозяйственных мочалок универсал+премиум (2шт.) в ассортименте, 31 р
+  <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
         </button>
      </p>
-        <button>
-    <img src="../assets/Heart.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    <a href="../pages/Wish-list.html">Добавить в список желаний</a>
-   </button> 
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
+   </div> 
+
+
+ <div class="Content6 col-lg-4 col-sm-8 col-xs-8">
+
+ <a href="../pages/Goods34.html">
+  
+         <div class="Photo3"  data-title="Средство для мытья посуды LV удаляет любую грязь, даже в холодной воде. Не раздражает кожу рук, не портит ногти.">
+         <img class="Img1" src="../assets/Means.jpg"> 
+         </div>
+
+  </a> 
+  LV Средство для мытья посуды 500 мл, 295 р
+   <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
    </div>
 
 
@@ -497,37 +667,27 @@
 
   </div> 
 
- 
-    
+<div class="grid-item color1 footer">
+  <div class="flex-container4 row">
+   <div class="Footer7 col-md-4 col-sm-8 col-xs-8">
+     <div class="Footer10"><h3 class="Footer11">ПОМОЩЬ</h3></div>
+      <a href="https://mail.ru/" style="color:#9400D3">SUPPORT@BEAUTY.RU</a>
+   </div> 
 
-    <div class="grid-item color1 footer">
-          
-       <div class="flex-container4">
+  <div class="Footer7 col-md-4 col-sm-8 col-xs-8">
+    <div class="Footer10"><h3>СВЯЖИТЕСЬ С НАМИ </h3></div>
+    <p>
+      <img class="Article-picture" src="../assets/Call.jpg" >
+        CALL-ЦЕНТР  8 800 700-67-89<br>
+        Пн-Пт с 10:00 до 18:45
+    </p>
+  </div>
+  </div>
 
-		<div class="Footer7"> 
-
-	    <div class="Footer10"><h3>ПОМОЩЬ</h3></div> 
-
-			<a href="https://mail.ru/">SUPPORT@BEAUTY.RU</a>
-
-		</div> 
-
-		<div class="Footer7"> 
-
-
-		<div class="Footer10"><h3>СВЯЖИТЕСЬ С НАМИ </h3></div>
-
-
-<p><img src="../assets/Call.jpg" width="70" height="70" align="left" class="article-picture" >
-		 CALL-ЦЕНТР  8 800 700-67-89<br>
-        Пн-Пт с 10:00 до 18:45</p></div> 	
-
-      </div>
-
-   </div>
-
+</div>
    
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body> 
 
 </html>

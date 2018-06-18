@@ -1,5 +1,4 @@
 @import url("../styles/style.css");
-@import url("../scripts/index.js");
 @import url("../styles/style-desktop.css")(min-width: 1024px);
 @import url("../styles/style-tablet.css") (min-width: 769px) and (max-width: 1023px);
 @import url("../styles/style-mobile.css") (max-width: 768px);
@@ -42,10 +41,11 @@
 
 .Content11{
 
-  width:220px;
-  height:195px;
+ width: 300px;
+ height: 300px;
 
 }
+    
 .grid-container { 
   grid-template-columns: 100%;
   grid-template-rows: 10% 10% 158% 25%; 
@@ -61,12 +61,12 @@
 
 
 
-.Photo1 {
+.Photo2 {
   display: inline-block; 
   position: relative;
 }
 
-.Photo1:hover::after {
+.Photo2:hover::after {
   content: attr(data-title);
   position: absolute;
   left: 0%; top: 0%;
@@ -76,14 +76,11 @@
   font-size: 18px; 
   padding: 5px 10px; 
   border: 1px solid #333;
-  width: 280px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
 }
 
-.Img1{
-  width:280px;
-  height:270px;
-}
+
 
 .Img2{
   width:40px;

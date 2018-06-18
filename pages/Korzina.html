@@ -9,36 +9,9 @@
 <meta name="author" content="Novoselova Julia"> 
 <meta name="keywords" content="BeautyHome"> 
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="../styles/index.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../styles/Korzina.css">
 <link rel="shortcut icon" href="../assets/Beauty.jpg" type="image/jpg">
-<link rel="stylesheet" type="text/css" href="style.css" />
-
-
-
-
-
-
- <!-- Подключаем jQuery -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
- 
-  <!-- Скрипт плавного открытия и закрытия блока -->
-  <script type='text/javascript'> 
-    $(document).ready(function() { 
-      $("A#1").toggle(function() { 
-        // Отображаем скрытый блок 
-        $("DIV#box").fadeIn(); // fadeIn - плавное появлени
-        return false; // не производить переход по ссылке
-      },  
-      function() { 
-        // Скрываем блок 
-        $("DIV#box").fadeOut(); // fadeOut - плавное исчезновение 
-        return false; // не производить переход по ссылке
-      }); // end of toggle() 
-    }); // end of ready() 
-  </script> 
-
-
-
 </head> 
 
 
@@ -50,15 +23,20 @@
         <div class="flex-container5">
 
     <div class="Header1"><a href="../index.html"><img src="../assets/Logo.png" class="Header12"></a></div> 
-    <div class="Header2">Поиск по каталогу</div> 
+      <label class="Header2">
+
+                <input placeholder="Поиск по каталогу" >
+
+      </label>
 
      </div>
 
      <div class="flex-container6">
 
-    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img src="../assets/Vhod.png" width="30" height="30" alt=""></a></div></div> 
-    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img src="../assets/Heart.jpg" width="30" height="30"></a></div></div> 
-    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img src="../assets/Basket.jpg" width="30" height="30"></a></div></div> 
+    <div class="Header3"><a href="../pages/Vhod.html"><div class="photo" data-title="Войти"><img class="Img5" src="../assets/Vhod.png"></a></div></div> 
+    <div class="Header3"><a href="../pages/Wish-list.html"><div class="photo" data-title="Список желаний"><img class="Img5" src="../assets/Heart.jpg"></a></div></div> 
+    <div class="Header3"><a href="../pages/Korzina.html"><div class="photo" data-title="Корзина"><img class="Img5" src="../assets/Basket.jpg">
+    </a></div></div> 
 
     </div>
    
@@ -71,12 +49,12 @@
     <div class="grid-item color1 banner">
 
 
-       <div class="flex-container1" >
+       <div class="flex-container1 row" >
 
        <nav>
 
          <ul>
-               <li> <a href="#"> <div class="Banner4"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
+               <li> <a href="#"> <div class="Banner4 col-lg-12 col-sm-12 col-xs-8"> <a href="../pages/Katalog.html">КАТАЛОГ</a> </a></div> 
 
                    <ul>
                   <li><a href="../pages/Katalog.html#1">Кисти</a></li>
@@ -85,9 +63,9 @@
                     <ul>
 
                             <li><a href="../pages/Katalog.html#3">Лицо</a></li>
-                      <li><a href="../pages/Katalog.html#4">Глаза</a></li>
-              <li><a href="../pages/Katalog.html#5">Губы</a></li>
-                      <li><a href="../pages/Katalog.html#6">Ногти</a></li>
+                            <li><a href="../pages/Katalog.html#4">Глаза</a></li>
+                            <li><a href="../pages/Katalog.html#5">Губы</a></li>
+                            <li><a href="../pages/Katalog.html#6">Ногти</a></li>
 
                                
                     </ul>
@@ -100,7 +78,7 @@
                </ul>
               
               </li>
-       <li><div class="Banner4"> <a href="../pages/Question-answers.html">ВОПРОСЫ-ОТВЕТЫ</a></div> </li>
+     <li><div class="Banner4"> <a href="../pages/Question-answers.html">ВОПРОСЫ-ОТВЕТЫ</a></div> </li>
      <li><div class="Banner4"> <a href="../pages/Company-description.html">О НАС</a></div> </li>
      <li><div class="Banner4"> <a href="../pages/Company-news.html">НОВИНКИ</a></div> </li>
 
@@ -118,25 +96,35 @@
     
   <div class="grid-item color1 content">
  
- 
-
 
           
     <div class="Content9"><h2>КОРЗИНА</h2></div>
 
-     <div class="flex-container3">
+     <div class="flex-container3 row">
  	
-		 <div class="Content6"> <img src="../assets/Pearl.jpg" width="220" height="195"> </a >Petitfee Гидрогелевые патчи для кожи вокруг глаз с жемчугом и маслом ши Koelf Pearl & Shea Butter Eye Patch, 60 шт, 1218 р 
+		 <div class="Content6 col-lg-4 col-sm-8 col-xs-8">  
 
-       <p> <button>
-    <img src="../assets/Basket.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    Купить
-   </button>
+       <a href="../pages/Goods13.html">
+  
+         <div class="Photo2"  data-title="Гидрогелевые патчи интенсивно питают, смягчают кожу, выводят токсины, наполняют живительной влагой и жизненной силой. Гидрогель при нанесении на кожу, под воздействием ее тепла растворяется, что позволяет активным компонентам быстрее и глубже проникать.">
+         <img class="Content11" src="../assets/Pearl.jpg"> 
+         </div>
 
-       <button>
-    <img src="../assets/Delete.jpg" width="30" height="30" alt="" style="vertical-align:middle"> 
-    Удалить из корзины
-   </button></p>
+       </a>
+
+     Petitfee Гидрогелевые патчи для кожи вокруг глаз с жемчугом и маслом ши Koelf Pearl & Shea Butter Eye Patch, 60 шт, 1218 р 
+
+     <p>
+    <button class="Button2">
+    <img class="Img2" src="../assets/Basket.jpg"> 
+    <a href="../pages/Korzina.html">Добавить в<br> корзину</a>
+        </button>
+     </p>
+
+        <button class="Button2">
+    <img class="Img3" src="../assets/Heart.jpg" > 
+    <a href="../pages/Wish-list.html">Добавить в<br> список желаний</a>
+        </button> 
      </div>
 	
 		</div>
@@ -145,34 +133,27 @@
 
  
     
+
 <div class="grid-item color1 footer">
-          
-       <div class="flex-container4">
+  <div class="flex-container4 row">
+   <div class="Footer7 col-md-4 col-sm-8 col-xs-8">
+     <div class="Footer10"><h3 class="Footer11">ПОМОЩЬ</h3></div>
+      <a href="https://mail.ru/" style="color:#9400D3">SUPPORT@BEAUTY.RU</a>
+   </div> 
 
-    <div class="Footer7"> 
-
-      <div class="Footer10"><h3>ПОМОЩЬ</h3></div> 
-
-      <a href="https://mail.ru/">SUPPORT@BEAUTY.RU</a>
-
-    </div> 
-
-    <div class="Footer7"> 
-
-
+  <div class="Footer7 col-md-4 col-sm-8 col-xs-8">
     <div class="Footer10"><h3>СВЯЖИТЕСЬ С НАМИ </h3></div>
+    <p>
+      <img class="Article-picture" src="../assets/Call.jpg" >
+        CALL-ЦЕНТР  8 800 700-67-89<br>
+        Пн-Пт с 10:00 до 18:45
+    </p>
+  </div>
+  </div>
 
-
-<p ><img src="../assets/Call.jpg" width="70" height="70" align="left" class="article-picture" >
-     CALL-ЦЕНТР  8 800 700-67-89<br>
-        Пн-Пт с 10:00 до 18:45</p></div>  
-
-      </div>
-
-   </div>
-
+</div>
    
-
-</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://st
 
 </html>

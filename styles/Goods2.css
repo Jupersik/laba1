@@ -20,7 +20,6 @@
   color: black;
   background-color: rgb(205, 104, 137);
   text-align: center;
-
 }
 
 .Img2{
@@ -58,4 +57,29 @@ background: #800080;
                            "content"
                            "footer"; 
     
+}
+
+
+.carousel-inner {
+    position: relative;
+    width: 3000px;
+    overflow: hidden;
+    height: 2000px;
+}
+.carousel
+{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+
+.img-fluid{
+  width:300px;
+  height: 400px;
+}
+
+.Wish1 {
+    height: 500px;
+    text-align: center;
 }

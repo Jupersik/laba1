@@ -1,5 +1,23 @@
-.wish1{
+@import url("../styles/style.css");
+@import url("../styles/style-desktop.css")(min-width: 1024px);
+@import url("../styles/style-tablet.css") (min-width: 769px) and (max-width: 1023px);
+@import url("../styles/style-mobile.css") (max-width: 768px);
+
+
+
+
+.Wish1{
 	
 	height: 500px;
 	text-align: center;
+}
+
+.grid-container { 
+      grid-template-columns: 100%; 
+      grid-template-rows: 10% 10% 70% 25%; 
+      grid-template-areas: "header"
+                           "banner"
+                           "content"
+                           "footer"; 
+    
 }
