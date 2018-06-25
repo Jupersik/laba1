@@ -1,13 +1,15 @@
 @import url("../styles/style.css");
+@import url("../scripts/Company-news.js");
 @import url("../styles/style-desktop4.css") (min-width: 1024px);
 @import url("../styles/style-tablet4.css") (min-width: 769px) and (max-width: 1023px);
 @import url("../styles/style-mobile4.css") (max-width: 768px);
 
 
  .flex-container3 {
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  margin: 1%
+  margin: 1%;
 }
     
   
@@ -22,6 +24,9 @@
   text-align: center;
   flex-direction: column;
   min-width: 300px;
+  width: auto;
+  height: 100%;
+  
 }
 
 
@@ -38,6 +43,7 @@
   padding: 0.7em; 
   background-color: rgb(205, 104, 137);
   color: black;
+  flex-basis:45%;
 }
     
 .Content9{
@@ -70,35 +76,21 @@
 
 .Comment1 {
   border: 2px solid rgb(0, 0, 0);
-  width:100%;
-  height: 6em;
+  width:auto;
+  height: auto;
   margin-top: 1em;
+  padding-top: 10px;
 }
 
-.Comment2 {
-  border: 2px solid rgb(169, 169, 169);
-  width:100%;
-  height: 8em;
-  margin-top: 1em;
-} 
 
-
-.Comment3 {
-  border: 2px solid rgb(169, 169, 169);
-  width:100%;
-  height: 5em;
-  margin-top: 1em;
-} 
 .Txt_area{ 
-  width:100%; 
-  height:300px; 
-  margin-left: 8px; 
-
+  width:auto; 
+  height:auto; 
 } 
 
 .Form_comment{ 
-  width:100%; 
-  height: 100%; 
+  width:auto; 
+  height:auto; 
 }
 
 .Img2{
@@ -146,4 +138,15 @@
   border: 1px solid #333;
   width: 300px;
   height: 300px;
+}
+
+.Article-picture1
+{
+  margin: 0 10px;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.text{
+  text-align: right;
 }
