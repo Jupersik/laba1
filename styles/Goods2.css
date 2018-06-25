@@ -6,7 +6,7 @@
 .flex-container3 {
  justify-content: space-around;
  overflow: hidden;
-
+ margin: 1%;
 }
 
 
@@ -14,9 +14,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 25%;
   margin: 0.5em;
-  padding: 0.7em;
+  padding: 1%;
+  color: black;
+  background-color: rgb(205, 104, 137);
+  text-align: center;
+  min-width: 300px;
+  justify-content: center;
+}
+.content7{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+  padding: 1%;
   color: black;
   background-color: rgb(205, 104, 137);
   text-align: center;
@@ -38,14 +49,9 @@
 }
 
 
-.Img4{
-  width:300px;
-  height:400px;
-  margin-top: 50px;
-}
 
 .Button2{
-background: #800080; 
+  background: #800080; 
 }
 
 
@@ -61,10 +67,10 @@ background: #800080;
 
 
 .carousel-inner {
-    position: relative;
-    width: 3000px;
-    overflow: hidden;
-    height: 2000px;
+  position: relative;
+  width: 3000px;
+  overflow: hidden;
+  height: 2000px;
 }
 .carousel
 {
@@ -76,10 +82,15 @@ background: #800080;
 
 .img-fluid{
   width:300px;
-  height: 400px;
+  height:400px;
 }
 
 .Wish1 {
-    height: 500px;
-    text-align: center;
+  height: 500px;
+  text-align: center;
+}
+
+.d-block{
+  margin-left:5.5em;
+  margin-top: 2em;
 }

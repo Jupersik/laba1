@@ -48,7 +48,7 @@
     <div class="grid-item color1 banner">
 
 
-       <div class="flex-container1 row" >
+       <div class="flex-container1 row">
 
        <nav>
 
@@ -131,34 +131,79 @@
     </div> 
 
      <div class="Content8">
+	 
+  <div id="comments">
   <div class="Txt_area"> 
-    <form method="GET" class="Form_comment"> 
+    <form class="Form_comment" v-on:submit.prevent="onSubmit"> 
         <p><b>Комментарии</b></p><hr> 
            <div> 
             <label>Введите имя: 
-              <input type="text" placeholder="Имя" required tabindex="1" name="name"> 
+              <input type="text" placeholder="Имя" required tabindex="1" name="name" v-model="name"> 
              </label> 
           </div> 
         <div> 
-          <label><p>Текст комментария:</p> 
-             <textarea class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment" tabindex="2" required>
+          <label><p>Текст комментария:</p>
+             <textarea v-model="message" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment" tabindex="2" required>
                
              </textarea> 
           </label> 
         </div> 
-   <button type="submit">Отправить</button> 
+   <button  v-on:click="addComment">Отправить</button> 
    <button type="reset">Очистить</button> 
     </form> 
   </div>
-
-    <div class="Comment1"> <p><img class="Article-picture" src="../assets/User1.jpg">
-         Пользователь Jupersik:<br> Отличный товар, рекомендую к покупке!<br>1.06.2018г</p>
-    </div>    
+	
+    <div class="Comment1" v-for="comment in comments">
+		<img class="Article-picture" :src="comment.img">
+		<p>Пользователь {{ comment.name }}:</p>
+		<p>{{ comment.text }}</p>
+		<p>{{ comment.date }}</p>
+    </div>  
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+		el: '#comments',
+		data: {
+			name: "",
+			message: "",
+			comments: [
+			{
+				img: "../assets/User1.jpg",
+				name: "Jupersik",
+				text: "Отличный товар, рекомендую к покупке!",
+				date: "01.06.2018"
+			},			
+			{
+				img: "../assets/User2.jpeg",
+				name: "Max",
+				text: "Отличный товар, рекомендую к покупке!",
+				date: "03.05.2018"
+			}
+			]
+		},
+		methods: {
+			addComment() { 
+				this.comments.push(
+				{
+					img: "../assets/User1.jpg",
+					name: this.name,
+					text: this.message,
+					date: (new Date()).toDateString()
+				}
+				)
+			}
+		}
+})
+  </script>
+  
     </div>
 
 
+</div>
 
-
+ <div class="flex-container3 row">
       <div class="Content6 col-lg-4 col-sm-8 col-xs-8 ">
 
  <a href="../pages/Goods10.html">
@@ -277,7 +322,9 @@
          Пользователь OlyaBarabolya:<br> Особо не впечатлила.<br>31.12.2017г</p>
 </div>
   </div>
+</div>
 
+ <div class="flex-container3 row">
     <div class="Content6 col-lg-4 col-sm-8 col-xs-8 ">
 
         <a href="../pages/Goods12.html">
@@ -359,6 +406,10 @@
   </div>
 
 </div>
+<a href="#" id="toTop" style="display:block;">
+  <span id="toTopHover" style="opacity:0;"> </span>
+  "To Top"
+</a>
    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -6,12 +6,14 @@
 .vhod1{
   display: flex;
   align-items: center;
-  width: 60%;
   margin: 0.5em;
   padding: 0.7em;
   color: black;
   background-color: rgb(205, 104, 137);
   text-align: center;
+  width: 80%;
+  align-content: center;
+  flex-direction: column;
 
 }
 
@@ -19,6 +21,7 @@
 	display: flex;
   margin: 1%;
   flex-direction: column;
+  align-items: center;
 }
 
 .grid-container { 
