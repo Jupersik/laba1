@@ -107,7 +107,7 @@
 
  <a href="../pages/Goods9.html">
   
-         <div class="Photo2"  data-title="Простое в использовании и эффективное средство для домашнего ухода за кожей. Полоски предназначены для удаления черных точек на носу, которые являются следствием забитых пор. Полоски позволяют очистить кожу от загрязнений и излишков кожного жира.">
+         <div class="Photo2"  data-title="Простое в использовании и эффективное средство для домашнего ухода за кожей.">
          <img class="Content11" src="../assets/Patches.jpg"> 
          </div>
 
@@ -142,9 +142,9 @@
               <input type="text" placeholder="Имя" required tabindex="1" name="name" v-model="name"> 
              </label> 
           </div> 
-        <div> 
+        <div class="ase"> 
           <label><p>Текст комментария:</p>
-             <textarea v-model="message" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment" tabindex="2" required>
+             <textarea class="Content12"  v-model="message" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment" tabindex="2" required>
                
              </textarea> 
           </label> 
@@ -162,26 +162,26 @@
     </div>  
   </div>
   
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
-    app = new Vue({
-		el: '#comments',
-		data: {
-			name: "",
-			message: "",
-			comments: [
-			{
-				img: "../assets/User1.jpg",
-				name: "Dana",
-				text: "Отличный товар, рекомендую к покупке!",
-				date: "01.06.2018"
-			},			
-			{
-				img: "../assets/User5.jpg",
-				name: "Ryan",
-				text: "Моя жена довольна подарком!",
-				date: "03.05.2017"
-			},
+   var app = new Vue({
+    el: '#comments',
+    data: {
+      name: "",
+      message: "",
+      comments: [
+      {
+        img: "../assets/User1.jpg",
+        name: "Dana",
+        text: "Отличный товар, рекомендую к покупке!",
+        date: "01.06.2018"
+      },      
+      {
+        img: "../assets/User5.jpg",
+        name: "Ryan",
+        text: "Моя жена довольна подарком!",
+        date: "03.05.2017"
+      },
       {
         img: "../assets/User6.jpg",
         name: "Julia",
@@ -189,23 +189,23 @@
         date: "28.03.2018"
       }
 
-			]
-		},
-		methods: {
-			addComment() { 
-				this.comments.push(
-				{
-					img: "../assets/User.jpg",
-					name: this.name,
-					text: this.message,
-					date: (new Date()).toDateString()
-				}
-				)
-			}
-		}
+      ]
+    },
+    methods: {
+      addComment() { 
+        this.comments.push(
+        {
+          img: "../assets/User1.jpg",
+          name: this.name,
+          text: this.message,
+          date: (new Date()).toDateString()
+        }
+        )
+      }
+    }
 })
   </script>
-  
+
     </div>
 
 
@@ -216,11 +216,8 @@
 
  <a href="../pages/Goods10.html">
   
-         <div class="Photo2"  data-title="Тщательное и бережное очищение кожи. 
-           густая, как зефир, пена в одно касание, благодаря встроенной помпе
-           уникальная технология SPT от KAO гарантирует тщательное, но бережное очищение кожи
-           для нормальной и комбинированной кожи
-           без спирта, можно использовать на области вокруг глаз.">
+         <div class="Photo2"  data-title="Тщательное и бережное очищение кожи, 
+           можно использовать на области вокруг глаз.">
          <img class="Content11" src="../assets/Mousse.jpg"> 
          </div>
 
@@ -255,7 +252,7 @@
           </div> 
        <div> 
           <label><p>Текст комментария:</p>
-             <textarea v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
+             <textarea  class="Content12" v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
                
              </textarea> 
           </label> 
@@ -328,7 +325,7 @@
 
        <a href="../pages/Goods11.html">
   
-         <div class="Photo2"  data-title="Эта одноразовая тканевая маска для рук Бэйби Силки питает кожу и делает ее гладкой. Смягчает, благодаря маслу ши и фруктовым кислотам в составе.">
+         <div class="Photo2"  data-title="Эта одноразовая тканевая маска для рук Бэйби Силки питает кожу и делает ее гладкой. Смягчает, благодаря маслу ши и фруктовым кислотам.">
          <img class="Content11" src="../assets/Mask.jpg"> 
          </div>
 
@@ -364,7 +361,7 @@
           </div> 
        <div> 
           <label><p>Текст комментария:</p>
-             <textarea v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
+             <textarea class="Content12" v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
                
              </textarea> 
           </label> 
@@ -433,7 +430,7 @@
 
         <a href="../pages/Goods12.html">
   
-         <div class="Photo2"  data-title="Средство содержит масло камелии, масло арганы, экстракт жожоба. Концентрированная формула для глубоко ухода и защиты поврежденных волос. Сбалансированное увлажнение, питание и защита. Сохраняет цвет окрашенных волос, обеспечивает блеск волос и шелковистость. ">
+         <div class="Photo2"  data-title="Средство содержит масло камелии, масло арганы, экстракт жожоба. Концентрированная формула для глубоко ухода и защиты.">
          <img class="Content11" src="../assets/Oil.jpg"> 
          </div>
 
@@ -469,7 +466,7 @@
           </div> 
        <div> 
           <label><p>Текст комментария:</p>
-             <textarea v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
+             <textarea class="Content12"  v-model="message1" class="Comment" placeholder="Ваш комментарий..." wrap="hard" cols="50" rows="5" name="comment1" tabindex="2" required>
                
              </textarea> 
           </label> 
