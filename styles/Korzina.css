@@ -9,11 +9,9 @@
 .flex-container3 {
  justify-content: space-around;
  overflow: hidden;
+ margin: 1%;
 
 }
-
-
-
 
 
 
@@ -27,6 +25,7 @@
   background-color: rgb(205, 104, 137);
   text-align: center;
   justify-content: center;
+  width: 100%;
 }
 
 
